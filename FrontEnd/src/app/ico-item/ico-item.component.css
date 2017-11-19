@@ -1,0 +1,20 @@
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+.table > thead > tr > td {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.glyphicon {
+  font-size: 25px;
+}
+.glyphicon:hover {
+  color: #B57E2C;
+}
+.day {
+  display: block;
+  font-size: 20px;
+}
+td {
+  cursor: pointer;
+}

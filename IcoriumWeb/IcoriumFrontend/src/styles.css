@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+  font-family: 'Lato', 'Open Sans';
+}
+h4 {
+  text-transform: uppercase;
+  padding: 30px 0 20px 0;
+  font-weight: 600,
+}
+.align-center{
+  text-align: center;
+}
+.ico-logo img {
+	width:50px;
+	height:auto!important;
+}
+.btn-yellow {
+  color: #FFF;
+  font-weight: 600;
+  background-color: #B57E2C;
+  border-color: #B57E2C;
+}
+.btn-transparent {
+  color: #000;
+  font-weight: 600;
+  background-color:transparent;
+}
+.btn-search {
+  color: #000;
+  font-weight: 600;
+  background-color:#FFF;
+  padding: 5px;
+}
+.btn-white {
+  color: #000;
+  font-weight: 600;
+  background-color: #FFF;
+  padding: 6px 0;
+}
+.help-block {
+  color: red;
+}
+.request-sent {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.navbar-toggle {
+  background-color: #FFF;
+}
+.navbar-toggle span{
+  background-color: #000;
+}
+.ico-nav span:hover {
+  cursor: pointer;
+  color: #B57E2C;
+}
+p {
+  padding: 5px 0;
+}
+.icon-right {
+  height:50px;
+  width:auto;
+  padding-left: 5px;
+}
+icon-left {
+  height:50px;
+  width:auto;
+  padding-right: 5px;
+}
+.page-market {
+  width:100%;
+  padding-top: 60px!important;
+}
+@media (min-width:768px) {
+  .main-content {
+    min-height: 570px;
+  }
+}
+

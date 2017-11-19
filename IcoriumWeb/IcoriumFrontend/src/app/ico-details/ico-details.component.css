@@ -1,0 +1,80 @@
+.ico-name {
+  font-size:20px;
+  text-align: center;
+}
+.ico-one-liner {
+  font-size:18px;
+  text-align: center;
+}
+.ico-name span {
+  padding-top: 30px;
+}
+.ico-name img {
+  height: 70px;
+  width: auto;
+  padding-right: 20px;
+}
+.ico-whitepaper {
+  padding-top: 15px;
+}
+.ico-nav a{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.ico-nav a:hover{
+  text-decoration: none;
+  color: #B57E2C;
+}
+
+.ico-nav {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-top:20px;
+}
+.row {
+  padding: 10px 0;
+}
+h4 {
+  padding: 20px 0;
+}
+.member-name {
+  padding-left: 0;
+}
+.member div {
+  margin-bottom: 5px;
+}
+li {
+  list-style: none;
+  padding: 5px 0;
+}
+.articles {
+  margin-bottom: 10px;
+}
+.heading {
+  font-weight: 600;
+}
+.social-profiles li{
+   display: inline;
+   margin-right: 5px;
+}
+.social-link {
+  height: 40px;
+  width: auto;
+}
+.social-profiles {
+  padding-left:0;
+}
+.btn-white {
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left:0;
+}
+.no-data {
+  padding-left:40px;
+}
+@media (max-width:768px) {
+.even {
+  padding-top:20px;
+}
+}

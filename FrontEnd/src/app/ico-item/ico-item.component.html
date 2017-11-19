@@ -1,0 +1,23 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+          <td *ngIf="type == 'upcoming'" class="text-center">Starts At</td>
+          <td *ngIf="type == 'current'" class="text-center">Ends At</td>
+          <td *ngIf="type == 'past'" class="text-center">Closed At</td>
+          <td class="text-center">Logo</td>
+          <td>Company</td>
+          <td class="hidden-xs">Description</td>
+          <td class="hidden-xs hidden-sm text-center">Website</td>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ico of icos">
+            <td *ngIf="type == 'upcoming'" class="ico-date text-center" routerLink="/ico-details/{{ico.IcoId}}" (click)="onIcoClick($event)"><span class="day">{{ico.IcoStart | date:'dd'}}</span>{{ico.IcoStart | date:'MMM'}}</td>
+            <td *ngIf="type != 'upcoming'" class="ico-date text-center" routerLink="/ico-details/{{ico.IcoId}}" (click)="onIcoClick($event)"><span class="day">{{ico.IcoEnd | date:'dd'}}</span>{{ico.IcoEnd | date:'MMM'}}</td>
+            <td class="ico-logo text-center" routerLink="/ico-details/{{ico.IcoId}}" (click)="onIcoClick($event)"><img *ngIf="ico.Logo" src="http://images.icorium.io/thumbs/small/{{ico.Logo}}" /><img *ngIf="!ico.Logo" src="./assets/image/no-image.png" /></td>
+            <td class="ico-name col-xs-3 col-sm-3 col-md-3 col-lg-2" routerLink="/ico-details/{{ico.IcoId}}"  (click)="onIcoClick($event)">{{ico.CompanyName}}</td>
+            <td class="ico-oneliner hidden-xs col-md-3 col-lg-5" routerLink="/ico-details/{{ico.IcoId}}"  (click)="onIcoClick($event)"><span *ngIf="ico.OneLiner">{{ico.OneLiner}}</span><span *ngIf="!ico.OneLiner">no data available</span></td>
+            <td class="ico-website hidden-xs hidden-sm col-md-3 col-lg-2 text-center"><a href="{{ico.WebsiteUrl}}" target="_blank"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a></td>
+            </tr>
+    </tbody>
+  </table>
